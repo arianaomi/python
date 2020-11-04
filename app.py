@@ -1,19 +1,22 @@
 
-# Data type -> List (colección de elementos del mismo o dif tipo de dato)
+# Data type -> Dictionary (tipo mapa)
 
-my_list = ['perro','gato','caballo','perro']
+my_dictionary = {
+    "name":"Naomi",
+    "last_name":"Puertos",
+    "age":24
+}
 
-for animal in my_list:
-    print(animal)
+print(my_dictionary)
 
-# Method List
-my_list.append('pato') #agregar nuevo elemento
-print(my_list)
-my_list.remove('perro') #elimina el primero que encuentre
-print(my_list)
-#agregar varios elementos al final:
-my_list.extend(['gato','tortuga'])
-print(my_list)
-#agregar elementos en la posicion deseada
-my_list.insert(0,"puerquito")
-print(my_list)
+key = my_dictionary.keys()
+print(key)
+values = my_dictionary.values()
+print(values)
+items_count = my_dictionary.items()
+print(items_count)
+
+my_dictionary.update({"gender":"female"})
+
+for key,value in items_count:
+    print(value)
